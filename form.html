@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form: Give your opinion on the different brands of cars</h1>
+    <p id="description">Thank you for taking the time to help us improve.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label"
+          >Name:
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Your Name"
+        /></label>
+        <label for="email" id="email-label"
+          >Email:
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Your Email"
+        /></label>
+        <label for="age" id="number-label"
+          >Age:
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="100"
+            placeholder="Your Age"
+            required
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label>
+          Select the car brand:
+          <select id="dropdown">
+            <option>Lexus</option>
+            <option>Toyota</option>
+            <option>Subaru</option>
+            <option>Mitsubishi</option>
+            <option>Kia</option>
+            <option>Suzuki</option>
+            <option>Hyundai</option>
+            <option>Honda</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>Gender:</p>
+        <label
+          ><input type="radio" value="female" name="gender" class="inline" /> Female</label
+        >
+        <label><input type="radio" value="male" name="gender" class="inline" /> Male</label>
+      </fieldset>
+      <fieldset>
+        <p>Select what you like the most</p>
+        <label for="vehicle1"
+          ><input
+            type="checkbox"
+            class="inline"
+            id="vehicle1"
+            name="vehicle1"
+            value="Bike"
+          />
+          Comfort</label
+        >
+        <label for="vehicle2"
+          ><input
+            type="checkbox"
+            class="inline"
+            id="vehicle2"
+            name="vehicle2"
+            value="Car"
+          />
+          Luxury</label
+        >
+        <label for="vehicle3"
+          ><input
+            type="checkbox"
+            class="inline"
+            id="vehicle3"
+            name="vehicle3"
+            value="Boat"
+          />
+          Security</label
+        >
+        <label for="vehicle4"
+          ><input
+            type="checkbox"
+            class="inline"
+            id="vehicle4"
+            name="vehicle4"
+            value="Boat"
+          />
+          Familiar</label
+        >
+
+    </fieldset>
+    <p>Any comments or suggestions?</p>
+    <textarea
+      class="comment"
+      rows="5"
+      cols="30"
+      placeholder="Any Comment..."
+    ></textarea>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
